@@ -1,0 +1,35 @@
+:root {
+	--color-dark: lightgrey;
+	--color-light: white;
+}
+
+table {
+	margin: auto;
+	border-collapse: collapse;
+	border: 1px solid var(--color-dark);
+}
+
+td {
+	text-align: center;
+/*
+	font-size: 7.5vmin;
+	height: 11vmin;
+	width: 11vmin;
+*/
+}
+
+td:hover {
+	cursor: pointer;
+}
+
+td.dark	{ background: var(--color-dark); }
+td.light { background: var(--color-light); }
+
+td.selected		{ box-shadow: 0 0 3vmin inset blue; }
+td.kingunderattack	{ box-shadow: 0 0 3vmin inset red; }
+
+td.move-displace	{ box-shadow: 0 0 1vmin inset blue; }
+td.move-capture		{ box-shadow: 0 0 1vmin inset red; }
+td.move-enpassant	{ box-shadow: 0 0 1vmin inset red; }
+td.move-promote		{ box-shadow: 0 0 1vmin inset green; }
+td.move-castle		{ box-shadow: 0 0 1vmin inset purple; }
